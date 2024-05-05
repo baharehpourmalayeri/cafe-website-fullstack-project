@@ -17,7 +17,7 @@ function Admin() {
   const formRef = useRef(null);
 
   useEffect(() => {
-    fetch("http://localhost:8080/drinks")
+    fetch("/drinks")
       .then((response) => response.json())
       .then((result) => {
         setDrinks(result);
@@ -56,7 +56,7 @@ function Admin() {
   const handleDelete = (drink) => {
     const confirmDelete = window.confirm("Vill du ta bort denna dryck?");
     if (confirmDelete) {
-      fetch("http://localhost:8080/drink/" + drink.id, {
+      fetch("/drink/" + drink.id, {
         method: "DELETE",
       })
         .then((response) => response.json())
@@ -77,7 +77,7 @@ function Admin() {
         description: formDescription,
         ingredients: formIngredients,
       };
-      fetch("http://localhost:8080/drink", {
+      fetch("/drink", {
         headers: {
           Accept: "application/json",
           "Content-Type": "application/json",
@@ -100,7 +100,7 @@ function Admin() {
         description: formDescription,
         ingredients: formIngredients,
       };
-      fetch("http://localhost:8080/drink/" + formId, {
+      fetch("/drink/" + formId, {
         headers: {
           Accept: "application/json",
           "Content-Type": "application/json",

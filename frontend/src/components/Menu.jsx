@@ -5,7 +5,7 @@ function Menu() {
   const [drinks, setDrinks] = useState(null);
 
   useEffect(() => {
-    fetch("http://localhost:8080/drinks")
+    fetch("/drinks")
       .then((response) => response.json())
       .then((result) => {
         console.log(result);
