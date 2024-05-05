@@ -1,0 +1,118 @@
+#welcome {
+  text-align: center;
+  font-weight: normal;
+  font-family: heading-font, Arial, sans-serif;
+  font-size: 1.5em;
+  margin-top: auto;
+  margin-bottom: 50px;
+  color: rgb(209, 188, 173);
+}
+
+.barista {
+  width: 300px;
+}
+
+.content {
+  display: grid;
+  background-color: rgba(159, 140, 129, 0.9);
+  text-align: left;
+  width: 100%;
+  padding: 0px;
+}
+
+.content-left {
+  font-size: 17.5px;
+  grid-template-areas:
+    "text"
+    "image";
+}
+
+.content-right {
+  font-size: 17.5px;
+  grid-template-areas:
+    "text"
+    "image";
+}
+
+.content div {
+  grid-area: text;
+  margin: auto 0;
+  padding: 10px;
+  text-align: center;
+}
+
+.content img {
+  grid-area: image;
+  width: 100%;
+}
+
+.content p {
+  font-size: 18px;
+  color: rgb(5, 5, 5);
+}
+
+@media screen and (min-width: 600px) {
+  #welcome {
+    font-size: 2.5em;
+  }
+
+  .content-left {
+    grid-template-areas: "text text image";
+  }
+
+  .content-right {
+    grid-template-areas: "image text text";
+  }
+
+  .content {
+    width: 90%;
+    padding: 10px;
+    gap: 5px;
+    margin: 10px auto;
+  }
+
+  .content aside {
+    display: none;
+  }
+
+  .content div {
+    padding: 0;
+    text-align: left;
+  }
+
+  .content p {
+    margin: 0.2em 0 0 0.2em;
+    font-size: 1em;
+  }
+
+  .content img {
+    width: 300px;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .content-left {
+    grid-template-areas: "text text image";
+  }
+
+  .content-right {
+    grid-template-areas: "image text text";
+  }
+
+  .content {
+    width: 800px;
+    padding: 30px;
+    gap: 30px;
+    margin: 30px auto;
+  }
+
+  .content aside {
+    display: block;
+  }
+
+  .content p {
+    margin: 10px;
+    font-size: 18px;
+    color: rgb(5, 5, 5);
+  }
+}
