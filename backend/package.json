@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "node server.js"
+    "dev": "node index.js",
+    "build-frontend": "npm run --prefix ../frontend build && rm -Rf dist && mv ../frontend/dist ."
   },
   "keywords": [],
   "author": "",
