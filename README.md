@@ -4,7 +4,9 @@ A modern and responsive café website that started as a simple JavaScript projec
 This project showcases my journey from using JavaScript to adopting modern frameworks for better scalability and maintainability.
 
 🚀 Technologies Used
+
 Frontend:
+
 ✅ React – UI library for building dynamic components
 
 ✅ React Router – For client-side navigation
@@ -12,6 +14,7 @@ Frontend:
 ✅ Bootstrap – Styling and responsive design
 
 Backend:
+
 ✅ Node.js – JavaScript runtime environment
 
 ✅ Express.js – Lightweight backend framework
