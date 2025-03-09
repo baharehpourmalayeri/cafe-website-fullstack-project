@@ -39,7 +39,7 @@ cd cafe-website-fullstack-project
 -install dependencies by running: 
  npm install
 -Initialize the database (only for the first time):
- sqlite3 db/cafe.db < db.sql
+ sqlite3 test.sqlite < db.sql
 -Start the backend server:
  node server.js
 
