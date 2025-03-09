@@ -6,14 +6,20 @@ This project showcases my journey from using JavaScript to adopting modern frame
 🚀 Technologies Used
 Frontend:
 ✅ React – UI library for building dynamic components
+
 ✅ React Router – For client-side navigation
+
 ✅ Bootstrap – Styling and responsive design
 
 Backend:
 ✅ Node.js – JavaScript runtime environment
+
 ✅ Express.js – Lightweight backend framework
+
 ✅ CORS – Handling cross-origin requests
+
 ✅ SQLite – Lightweight database for storing data
+
 ✅ SQLite3 – Node.js bindings for SQLite
 
 
